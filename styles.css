@@ -1,0 +1,154 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    /* importamos fuente roboto  */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        /* al poner asterisco se lo aplica a todo */
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        /* aca se ponen estos dos en 0 y es buena practica ya que por defecto les ponen cierto padding */
+    }
+    
+    a {
+        text-decoration: none;
+        /* quiero quitar la rayida de abajo que sale por ser hypervinculo o ancla */
+        cursor: pointer;
+        /* quiero que cuando pase el mouse salga una manita */
+    }
+    
+    header {
+        width: 100%;
+        height: 60px;
+        /* anco de 100% y alto solo 60px */
+    }
+    
+    header nav {
+        display: flex;
+        /* para poder justificar el contenido ponerlo en lados y extremos */
+        justify-content: flex-end;
+        /* Se pone felx epara poder posicionar los elementos del nav con este metodo */
+    }
+    
+    header nav .nav-right-section {
+        width: 250px;
+        height: auto;
+        /* Al poner auto se acomoda al padre y su maximo height es el del padre */
+        display: flex;
+        /* para poder alienarlos con este tipo de metodo */
+        list-style: none;
+        /* le quitamos los punticos tipo lista */
+        justify-content: center;
+        /* ya esta alineado al final ahora lo ponemos centrado */
+        align-items: center;
+        /* para que no se queden en la parte de arriba  modo vertical si no en el medio de la barra de nav */
+    }
+    
+    nav .nav-right-section a {
+        margin-right: 10px;
+        /* para que queden alejados uno del otro no pegados */
+        color: black;
+    }
+    
+    nav .nav-right-section .menu-icon {
+        /* es el menu de los cuadritos */
+        background-image: url(https://static.thenounproject.com/png/756729-200.png);
+        background-repeat: no-repeat;
+        /* se pone la imagen pero de fondo, y el no repeat se pone esto para que no se repita y solo sea el dibujito */
+        background-position: center;
+        /* para que quede justo en el centro */
+        background-size: contain;
+        /* Se pone esto para que sea aproximado al tama;o del contenedor */
+        width: 25px;
+        height: 25px;
+    }
+    
+    nav .nav-right-section img {
+        border-radius: 50%;
+        margin-left: 10px;
+        /* estaba muy pegado lo separamos un poquito */
+        /* busco justo la imagen de la cara seb */
+    }
+    /* hasta aca eran items de la barra de navegacion y header*/
+    
+    main {
+        text-align: center;
+    }
+    
+    main .main-logo {
+        width: 530px;
+        /* dimensión del logo  */
+        margin: 0 auto;
+        /* 0 de margin de arriba y el auto lo que hace es dividir el espacio que quedaba a la izq y derecha centrando el elemento  es otra tecnica para centrar*/
+        margin-bottom: 35px;
+        height: 180px;
+    }
+    
+    main .main-logo img {
+        width: 300px;
+    }
+    
+    main .main-input {
+        /* esta es el contenedor del buscador con la lupita y voz */
+        width: 530px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    
+    main .main-input-conteiner {
+        /* El contenedor dentro del contenedor  */
+        width: 525px;
+        border-radius: 100px;
+        border: 1px solid #dfe1e5;
+        /* para ver que color exacto tiene la pagina de google, damos inspeccionar ponemos un color, se abre la paletico y miramos en el navegador */
+        display: flex;
+        /* flex ayuda a poner los 3 elementos de forma lineal */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main .main-input input {
+        width: 450px;
+        height: 40px;
+        border: none;
+        outline: none;
+        /* le quito el borde y con outline le quito el efecto cuando se para clickea*/
+    }
+    
+    main .main-input-conteiner:hover {
+        box-shadow: 0 1px 6px 0 #20212447;
+        /* me genera la sombra al pasar el mouse */
+        border-color: #dfe1e500;
+    }
+    
+    main .main-input .search-item {
+        /* es el menu de los cuadritos */
+        background-image: url(https://img.icons8.com/android/24/000000/search.png);
+        background-repeat: no-repeat;
+        /* se pone la imagen pero de fondo, y el no repeat se pone esto para que no se repita y solo sea el dibujito */
+        background-position: center;
+        /* para que quede justo en el centro */
+        background-size: contain;
+        /* Se pone esto para que sea aproximado al tama;o del contenedor */
+        width: 18px;
+        height: 18px;
+    }
+    
+    main .main-input .micro-icon {
+        /* es el menu de los cuadritos */
+        background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
+        background-repeat: no-repeat;
+        /* se pone la imagen pero de fondo, y el no repeat se pone esto para que no se repita y solo sea el dibujito */
+        background-position: center;
+        /* para que quede justo en el centro */
+        background-size: contain;
+        /* Se pone esto para que sea aproximado al tama;o del contenedor */
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        /* para que salga la manito cuando paso */
+    }
