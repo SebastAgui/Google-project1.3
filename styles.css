@@ -116,6 +116,7 @@
         height: 40px;
         border: none;
         outline: none;
+        margin-left: 15px;
         /* le quito el borde y con outline le quito el efecto cuando se para clickea*/
     }
     
@@ -151,4 +152,67 @@
         height: 18px;
         cursor: pointer;
         /* para que salga la manito cuando paso */
+    }
+    
+    main .main-buttons {
+        display: flex;
+        margin: 0 auto;
+        width: 530px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main .main-buttons button {
+        margin-right: 15px;
+        background-color: #f8f9fa;
+        cursor: pointer;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        font-size: 14px;
+        font-family: arial, sans-serif;
+        padding: 0 15px;
+    }
+    
+    main .main-buttons button:hover {
+        box-shadow: 0 1px 6px 0 #20212447;
+        border: 1px solid #c6c6c6;
+    }
+    
+    footer {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0px;
+        /* COn position y bottom aseguro que quede al final de la pag debe ser absolute o */
+        display: grid;
+        /* vamos a usar la grilla de ejemplo en el footer */
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        font-size: 13px;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+        /* solo tiene borde arriba , le especificamos todo color, ancho y tipo  */
+    }
+    
+    footer ul {
+        margin: 10px;
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+    }
+    
+    footer .footer-left {
+        justify-self: left;
+    }
+    
+    footer .footer-right {
+        justify-self: right;
+    }
+    
+    footer ul li a {
+        margin: 10px;
+        color: #5f6368;
     }
