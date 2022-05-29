@@ -185,7 +185,7 @@
         width: 100%;
         height: 50px;
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         /* COn position y bottom aseguro que quede al final de la pag debe ser absolute o */
         display: grid;
         /* vamos a usar la grilla de ejemplo en el footer */
